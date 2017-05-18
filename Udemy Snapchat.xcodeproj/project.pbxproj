@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96A2F7BC1ECD2CF30054743E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2F7BB1ECD2CF30054743E /* AppDelegate.swift */; };
+		96A2F7BE1ECD2CF30054743E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2F7BD1ECD2CF30054743E /* ViewController.swift */; };
+		96A2F7C11ECD2CF30054743E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A2F7BF1ECD2CF30054743E /* Main.storyboard */; };
+		96A2F7C31ECD2CF30054743E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A2F7C21ECD2CF30054743E /* Assets.xcassets */; };
+		96A2F7C61ECD2CF30054743E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A2F7C41ECD2CF30054743E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		96A2F7B81ECD2CF30054743E /* Udemy Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Udemy Snapchat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A2F7BB1ECD2CF30054743E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96A2F7BD1ECD2CF30054743E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96A2F7C01ECD2CF30054743E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96A2F7C21ECD2CF30054743E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96A2F7C51ECD2CF30054743E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96A2F7C71ECD2CF30054743E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96A2F7B51ECD2CF30054743E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96A2F7AF1ECD2CF30054743E = {
+			isa = PBXGroup;
+			children = (
+				96A2F7BA1ECD2CF30054743E /* Udemy Snapchat */,
+				96A2F7B91ECD2CF30054743E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96A2F7B91ECD2CF30054743E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96A2F7B81ECD2CF30054743E /* Udemy Snapchat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96A2F7BA1ECD2CF30054743E /* Udemy Snapchat */ = {
+			isa = PBXGroup;
+			children = (
+				96A2F7BB1ECD2CF30054743E /* AppDelegate.swift */,
+				96A2F7BD1ECD2CF30054743E /* ViewController.swift */,
+				96A2F7BF1ECD2CF30054743E /* Main.storyboard */,
+				96A2F7C21ECD2CF30054743E /* Assets.xcassets */,
+				96A2F7C41ECD2CF30054743E /* LaunchScreen.storyboard */,
+				96A2F7C71ECD2CF30054743E /* Info.plist */,
+			);
+			path = "Udemy Snapchat";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96A2F7B71ECD2CF30054743E /* Udemy Snapchat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96A2F7CA1ECD2CF30054743E /* Build configuration list for PBXNativeTarget "Udemy Snapchat" */;
+			buildPhases = (
+				96A2F7B41ECD2CF30054743E /* Sources */,
+				96A2F7B51ECD2CF30054743E /* Frameworks */,
+				96A2F7B61ECD2CF30054743E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Udemy Snapchat";
+			productName = "Udemy Snapchat";
+			productReference = 96A2F7B81ECD2CF30054743E /* Udemy Snapchat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96A2F7B01ECD2CF30054743E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Will Laco";
+				TargetAttributes = {
+					96A2F7B71ECD2CF30054743E = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 96A2F7B31ECD2CF30054743E /* Build configuration list for PBXProject "Udemy Snapchat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96A2F7AF1ECD2CF30054743E;
+			productRefGroup = 96A2F7B91ECD2CF30054743E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96A2F7B71ECD2CF30054743E /* Udemy Snapchat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96A2F7B61ECD2CF30054743E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A2F7C61ECD2CF30054743E /* LaunchScreen.storyboard in Resources */,
+				96A2F7C31ECD2CF30054743E /* Assets.xcassets in Resources */,
+				96A2F7C11ECD2CF30054743E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96A2F7B41ECD2CF30054743E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A2F7BE1ECD2CF30054743E /* ViewController.swift in Sources */,
+				96A2F7BC1ECD2CF30054743E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96A2F7BF1ECD2CF30054743E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96A2F7C01ECD2CF30054743E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96A2F7C41ECD2CF30054743E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96A2F7C51ECD2CF30054743E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96A2F7C81ECD2CF30054743E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96A2F7C91ECD2CF30054743E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96A2F7CB1ECD2CF30054743E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Udemy Snapchat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WL.Udemy-Snapchat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		96A2F7CC1ECD2CF30054743E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Udemy Snapchat/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WL.Udemy-Snapchat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96A2F7B31ECD2CF30054743E /* Build configuration list for PBXProject "Udemy Snapchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A2F7C81ECD2CF30054743E /* Debug */,
+				96A2F7C91ECD2CF30054743E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96A2F7CA1ECD2CF30054743E /* Build configuration list for PBXNativeTarget "Udemy Snapchat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96A2F7CB1ECD2CF30054743E /* Debug */,
+				96A2F7CC1ECD2CF30054743E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96A2F7B01ECD2CF30054743E /* Project object */;
+}
