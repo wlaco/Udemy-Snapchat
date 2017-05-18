@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		96A2F7BC1ECD2CF30054743E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2F7BB1ECD2CF30054743E /* AppDelegate.swift */; };
-		96A2F7BE1ECD2CF30054743E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2F7BD1ECD2CF30054743E /* ViewController.swift */; };
+		96A2F7BE1ECD2CF30054743E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2F7BD1ECD2CF30054743E /* SignInViewController.swift */; };
 		96A2F7C11ECD2CF30054743E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A2F7BF1ECD2CF30054743E /* Main.storyboard */; };
 		96A2F7C31ECD2CF30054743E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A2F7C21ECD2CF30054743E /* Assets.xcassets */; };
 		96A2F7C61ECD2CF30054743E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A2F7C41ECD2CF30054743E /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		661ED6453E7A1F5168CDF67A /* Pods-Udemy Snapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Udemy Snapchat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Udemy Snapchat/Pods-Udemy Snapchat.debug.xcconfig"; sourceTree = "<group>"; };
 		96A2F7B81ECD2CF30054743E /* Udemy Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Udemy Snapchat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A2F7BB1ECD2CF30054743E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96A2F7BD1ECD2CF30054743E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96A2F7BD1ECD2CF30054743E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		96A2F7C01ECD2CF30054743E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96A2F7C21ECD2CF30054743E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96A2F7C51ECD2CF30054743E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				96A2F7BB1ECD2CF30054743E /* AppDelegate.swift */,
-				96A2F7BD1ECD2CF30054743E /* ViewController.swift */,
+				96A2F7BD1ECD2CF30054743E /* SignInViewController.swift */,
 				96A2F7BF1ECD2CF30054743E /* Main.storyboard */,
 				96A2F7C21ECD2CF30054743E /* Assets.xcassets */,
 				96A2F7C41ECD2CF30054743E /* LaunchScreen.storyboard */,
@@ -215,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96A2F7BE1ECD2CF30054743E /* ViewController.swift in Sources */,
+				96A2F7BE1ECD2CF30054743E /* SignInViewController.swift in Sources */,
 				96A2F7BC1ECD2CF30054743E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +382,7 @@
 				96A2F7CC1ECD2CF30054743E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
