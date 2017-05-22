@@ -104,11 +104,88 @@
                                 <action selector="logOutTapped:" destination="dbF-9c-lkB" id="G1b-1M-ZI1"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dVz-iN-BRe">
+                            <connections>
+                                <segue destination="bbQ-Ib-aqt" kind="show" id="ggw-0M-g1a"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7e-z0-wK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1656.8" y="37.331334332833585"/>
+        </scene>
+        <!--Add Pic View Controller-->
+        <scene sceneID="koC-Be-fDi">
+            <objects>
+                <viewController id="bbQ-Ib-aqt" customClass="AddPicViewController" customModule="Udemy_Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="csz-7c-RDP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Znb-b1-pjv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qaA-2q-30t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iO0-Vn-2ve">
+                                <rect key="frame" x="67" y="84" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Fag-ST-8Du"/>
+                                    <constraint firstAttribute="height" constant="240" id="LlB-7b-OfJ"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2T1-0c-9rd">
+                                <rect key="frame" x="87.5" y="344" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="MLX-fE-DRk"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9k-vj-Z97">
+                                <rect key="frame" x="166" y="404" width="42" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextTapped:" destination="bbQ-Ib-aqt" eventType="touchUpInside" id="TrB-PK-5OF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iO0-Vn-2ve" firstAttribute="top" secondItem="csz-7c-RDP" secondAttribute="bottom" constant="20" id="KlB-Qu-iit"/>
+                            <constraint firstItem="Znb-b1-pjv" firstAttribute="top" secondItem="iO0-Vn-2ve" secondAttribute="bottom" constant="455" id="OWu-dn-2d6"/>
+                            <constraint firstItem="iO0-Vn-2ve" firstAttribute="centerX" secondItem="qaA-2q-30t" secondAttribute="centerX" id="aTJ-jZ-Sds"/>
+                            <constraint firstItem="2T1-0c-9rd" firstAttribute="top" secondItem="iO0-Vn-2ve" secondAttribute="bottom" constant="20" id="p2f-Jf-zl5"/>
+                            <constraint firstItem="M9k-vj-Z97" firstAttribute="centerX" secondItem="qaA-2q-30t" secondAttribute="centerX" id="q7P-kP-UKd"/>
+                            <constraint firstItem="iO0-Vn-2ve" firstAttribute="leading" secondItem="qaA-2q-30t" secondAttribute="leadingMargin" constant="51" id="qpU-OW-Blr"/>
+                            <constraint firstItem="2T1-0c-9rd" firstAttribute="centerX" secondItem="qaA-2q-30t" secondAttribute="centerX" id="yY7-Js-PmI"/>
+                            <constraint firstItem="M9k-vj-Z97" firstAttribute="top" secondItem="2T1-0c-9rd" secondAttribute="bottom" constant="30" id="zdB-qy-fQx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qpU-OW-Blr"/>
+                                <exclude reference="OWu-dn-2d6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="DzR-TP-azu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="aVR-Lp-cUM">
+                            <connections>
+                                <action selector="cameraTapped:" destination="bbQ-Ib-aqt" id="lz0-5z-Smp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nextButton" destination="M9k-vj-Z97" id="yWo-Vi-Vpw"/>
+                        <outlet property="snapImageView" destination="iO0-Vn-2ve" id="5T8-j0-8kA"/>
+                        <outlet property="snapNameTextField" destination="2T1-0c-9rd" id="Vxs-6n-sox"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Otc-VO-21b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2415" y="37"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TZh-Vi-FcY">

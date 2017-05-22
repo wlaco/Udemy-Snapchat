@@ -14,6 +14,7 @@
 		96A2F7C61ECD2CF30054743E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A2F7C41ECD2CF30054743E /* LaunchScreen.storyboard */; };
 		96A2F7CE1ECD32AF0054743E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96A2F7CD1ECD32AF0054743E /* GoogleService-Info.plist */; };
 		96A2F7D01ECF2A490054743E /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2F7CF1ECF2A490054743E /* SnapsViewController.swift */; };
+		96A2F7D21ED274D50054743E /* AddPicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2F7D11ED274D50054743E /* AddPicViewController.swift */; };
 		9B120489294B353575D460F7 /* Pods_Udemy_Snapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150C33B9A2B424A96172F381 /* Pods_Udemy_Snapchat.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		96A2F7C71ECD2CF30054743E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96A2F7CD1ECD32AF0054743E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		96A2F7CF1ECF2A490054743E /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		96A2F7D11ED274D50054743E /* AddPicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPicViewController.swift; sourceTree = "<group>"; };
 		FE5CD6C928CB7869B4F151BD /* Pods-Udemy Snapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Udemy Snapchat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Udemy Snapchat/Pods-Udemy Snapchat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 				96A2F7BB1ECD2CF30054743E /* AppDelegate.swift */,
 				96A2F7BD1ECD2CF30054743E /* SignInViewController.swift */,
 				96A2F7CF1ECF2A490054743E /* SnapsViewController.swift */,
+				96A2F7D11ED274D50054743E /* AddPicViewController.swift */,
 				96A2F7BF1ECD2CF30054743E /* Main.storyboard */,
 				96A2F7C21ECD2CF30054743E /* Assets.xcassets */,
 				96A2F7C41ECD2CF30054743E /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A2F7BE1ECD2CF30054743E /* SignInViewController.swift in Sources */,
+				96A2F7D21ED274D50054743E /* AddPicViewController.swift in Sources */,
 				96A2F7BC1ECD2CF30054743E /* AppDelegate.swift in Sources */,
 				96A2F7D01ECF2A490054743E /* SnapsViewController.swift in Sources */,
 			);
