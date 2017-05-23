@@ -127,8 +127,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iO0-Vn-2ve">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iO0-Vn-2ve">
                                 <rect key="frame" x="67" y="84" width="240" height="240"/>
+                                <color key="backgroundColor" red="0.92956606217616577" green="0.92956606217616577" blue="0.92956606217616577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Fag-ST-8Du"/>
                                     <constraint firstAttribute="height" constant="240" id="LlB-7b-OfJ"/>
@@ -181,11 +182,45 @@
                         <outlet property="nextButton" destination="M9k-vj-Z97" id="yWo-Vi-Vpw"/>
                         <outlet property="snapImageView" destination="iO0-Vn-2ve" id="5T8-j0-8kA"/>
                         <outlet property="snapNameTextField" destination="2T1-0c-9rd" id="Vxs-6n-sox"/>
+                        <segue destination="74H-08-jAS" kind="show" identifier="selectUserSegue" id="hsj-dh-zUi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Otc-VO-21b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2415" y="37"/>
+        </scene>
+        <!--Send To View Controller-->
+        <scene sceneID="xKx-tU-dtq">
+            <objects>
+                <viewController id="74H-08-jAS" customClass="SendToViewController" customModule="Udemy_Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6sf-3m-fti"/>
+                        <viewControllerLayoutGuide type="bottom" id="fh6-is-UYn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fAw-0G-CUJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SG9-t9-luw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fh6-is-UYn" firstAttribute="top" secondItem="SG9-t9-luw" secondAttribute="bottom" id="MCD-SW-zWb"/>
+                            <constraint firstAttribute="trailing" secondItem="SG9-t9-luw" secondAttribute="trailing" id="PrE-Bx-LGa"/>
+                            <constraint firstItem="SG9-t9-luw" firstAttribute="leading" secondItem="fAw-0G-CUJ" secondAttribute="leading" id="X8E-nM-WrE"/>
+                            <constraint firstItem="SG9-t9-luw" firstAttribute="top" secondItem="6sf-3m-fti" secondAttribute="bottom" id="pt5-Ux-fhk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="SG9-t9-luw" id="GGL-23-nAx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="izc-Hc-Lsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3167" y="36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TZh-Vi-FcY">
