@@ -21,15 +21,15 @@ class SendToViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
-        Database.database().reference().child("users").observe(DataEventType.childAdded, with: { (snapshot) in
-            print(snapshot)
+        Database.database().reference().child("users").observe(DataEventType.childAdded, with: {(DataSnapshot) in
+            print(DataSnapshot)
             
             let user = User()
-            user.email = (snapshot.value! as! [String:AnyObject])["email"] as! String
-            user.uid = snapshot.key
+            user.email = (DataSnapshot.value! as! [String:AnyObject])["email"] as! String
+            user.uid = DataSnapshot.key
             
             self.users.append(user)
-            
+
             self.tableView.reloadData()
         })
 
@@ -44,12 +44,9 @@ class SendToViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let user = users[indexPath.row]
         
-        cell.textLabel?.text? = user.email
+        cell.textLabel?.text = user.email
         
         return cell
     }
-    
-    
-
    
 }
