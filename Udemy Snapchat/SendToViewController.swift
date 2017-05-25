@@ -19,6 +19,8 @@ class SendToViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var desc = ""
     
+    var uuid = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -57,7 +59,7 @@ class SendToViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let user = users[indexPath.row]
         
-        let snap = ["from":user.email, "description":desc, "imageURL":imageURL]
+        let snap = ["from":Auth.auth().currentUser!.email!, "description":desc, "imageURL":imageURL, "uuid":uuid]
         
         Database.database().reference().child("users").child(user.uid).child("snaps").childByAutoId().setValue(snap)
         

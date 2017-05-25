@@ -16,11 +16,14 @@ class AddPicViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var snapNameTextField: UITextField!
     
     var imagePicker = UIImagePickerController()
+    var uuid = NSUUID().uuidString
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imagePicker.delegate = self
+        
+        nextButton.isEnabled = false
         
     }
     
@@ -32,6 +35,8 @@ class AddPicViewController: UIViewController, UIImagePickerControllerDelegate, U
         snapImageView.backgroundColor = UIColor.clear
         
         imagePicker.dismiss(animated: true, completion: nil)
+        
+        nextButton.isEnabled = true
     }
     
     @IBAction func cameraTapped(_ sender: Any) {
@@ -51,7 +56,7 @@ class AddPicViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         let imageData = UIImageJPEGRepresentation(snapImageView.image!, 0.01)!
         
-        imagesFolder.child("\(NSUUID().uuidString).jpg").putData(imageData, metadata: nil) { (metadata, error) in
+        imagesFolder.child("\(uuid).jpg").putData(imageData, metadata: nil) { (metadata, error) in
             if error != nil {
                 print("We had an error:\(error!)")
             } else {
@@ -67,6 +72,7 @@ class AddPicViewController: UIViewController, UIImagePickerControllerDelegate, U
         let nextVC = segue.destination as! SendToViewController
         nextVC.imageURL = sender as! String
         nextVC.desc = snapNameTextField.text!
+        nextVC.uuid = uuid
     }
     
 }
