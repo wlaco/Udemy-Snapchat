@@ -37,7 +37,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AppPW" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFl-Xw-vNY">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="wookpook" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFl-Xw-vNY">
                                 <rect key="frame" x="87.5" y="168" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="0vW-6S-Hno"/>
@@ -88,7 +88,7 @@
         <!--Snaps View Controller-->
         <scene sceneID="N2V-XC-sOO">
             <objects>
-                <viewController id="dbF-9c-lkB" customClass="SnapsViewController" customModule="Udemy_Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="dbF-9c-lkB" customClass="SnapsViewController" customModule="Udemy_Snapchat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ICS-pj-Qv9"/>
                         <viewControllerLayoutGuide type="bottom" id="Iow-Ii-r8d"/>
@@ -96,7 +96,19 @@
                     <view key="view" contentMode="scaleToFill" id="sas-Vo-0k4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ls-NN-wk8">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9ls-NN-wk8" secondAttribute="trailing" id="3UF-gO-cr3"/>
+                            <constraint firstItem="9ls-NN-wk8" firstAttribute="top" secondItem="ICS-pj-Qv9" secondAttribute="bottom" id="6hl-Nf-qUT"/>
+                            <constraint firstItem="Iow-Ii-r8d" firstAttribute="top" secondItem="9ls-NN-wk8" secondAttribute="bottom" id="Q5p-Sw-gM7"/>
+                            <constraint firstItem="9ls-NN-wk8" firstAttribute="leading" secondItem="sas-Vo-0k4" secondAttribute="leading" id="zhO-04-E0e"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="khO-Ax-hx2">
                         <barButtonItem key="leftBarButtonItem" title="Log out" id="yVk-Wz-pV0">
@@ -110,10 +122,83 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="9ls-NN-wk8" id="aPH-Ep-ldB"/>
+                        <segue destination="6T0-J7-AcX" kind="show" identifier="viewSnapSegue" id="jtz-Tq-nnh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7e-z0-wK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1656.8" y="37.331334332833585"/>
+        </scene>
+        <!--View Snap View Controller-->
+        <scene sceneID="EBt-fT-38d">
+            <objects>
+                <viewController id="6T0-J7-AcX" customClass="ViewSnapViewController" customModule="Udemy_Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ieE-QD-dAz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Msh-DU-dCG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IFD-C3-fmQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W34-8S-jbn">
+                                <rect key="frame" x="10" y="124" width="355" height="501.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="LfO-tE-exH"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LfO-tE-exH"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="snap description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg5-mg-wjp">
+                                <rect key="frame" x="5" y="635.5" width="365" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBp-2V-zQZ">
+                                <rect key="frame" x="140.5" y="84" width="94" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xBp-2V-zQZ" firstAttribute="top" secondItem="ieE-QD-dAz" secondAttribute="bottom" constant="20" id="1cq-86-Y0g"/>
+                            <constraint firstItem="jg5-mg-wjp" firstAttribute="top" secondItem="W34-8S-jbn" secondAttribute="bottom" constant="45" id="7Nr-pL-qMp"/>
+                            <constraint firstItem="W34-8S-jbn" firstAttribute="top" secondItem="ieE-QD-dAz" secondAttribute="bottom" constant="60" id="AcC-xt-B9S"/>
+                            <constraint firstItem="W34-8S-jbn" firstAttribute="top" secondItem="xBp-2V-zQZ" secondAttribute="bottom" constant="16" id="Cdj-L2-R2z"/>
+                            <constraint firstAttribute="trailing" secondItem="W34-8S-jbn" secondAttribute="trailing" constant="10" id="M78-Ja-Rlf"/>
+                            <constraint firstItem="xBp-2V-zQZ" firstAttribute="centerX" secondItem="IFD-C3-fmQ" secondAttribute="centerX" id="QDM-cw-BAT"/>
+                            <constraint firstItem="jg5-mg-wjp" firstAttribute="top" secondItem="W34-8S-jbn" secondAttribute="bottom" constant="10" id="ZLC-66-RIi"/>
+                            <constraint firstItem="jg5-mg-wjp" firstAttribute="centerX" secondItem="IFD-C3-fmQ" secondAttribute="centerX" id="drm-Xf-B8k"/>
+                            <constraint firstAttribute="trailing" secondItem="jg5-mg-wjp" secondAttribute="trailing" constant="5" id="fPb-HF-uAn"/>
+                            <constraint firstItem="W34-8S-jbn" firstAttribute="leading" secondItem="IFD-C3-fmQ" secondAttribute="leading" constant="10" id="k3i-sU-ve0"/>
+                            <constraint firstItem="W34-8S-jbn" firstAttribute="centerX" secondItem="IFD-C3-fmQ" secondAttribute="centerX" id="p47-Ol-4Kr"/>
+                            <constraint firstItem="Msh-DU-dCG" firstAttribute="top" secondItem="jg5-mg-wjp" secondAttribute="bottom" constant="10" id="r67-DU-KjE"/>
+                            <constraint firstItem="jg5-mg-wjp" firstAttribute="leading" secondItem="IFD-C3-fmQ" secondAttribute="leading" constant="5" id="ucg-sh-1Ao"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AcC-xt-B9S"/>
+                                <exclude reference="7Nr-pL-qMp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="descLabel" destination="jg5-mg-wjp" id="4PF-pk-s0r"/>
+                        <outlet property="fromLabel" destination="xBp-2V-zQZ" id="L63-4B-pe3"/>
+                        <outlet property="imageView" destination="W34-8S-jbn" id="Hyh-eP-zm3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32b-sE-tJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="737"/>
         </scene>
         <!--Add Pic View Controller-->
         <scene sceneID="koC-Be-fDi">
@@ -192,7 +277,7 @@
         <!--Send To View Controller-->
         <scene sceneID="xKx-tU-dtq">
             <objects>
-                <viewController id="74H-08-jAS" customClass="SendToViewController" customModule="Udemy_Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="74H-08-jAS" customClass="SendToViewController" customModule="Udemy_Snapchat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6sf-3m-fti"/>
                         <viewControllerLayoutGuide type="bottom" id="fh6-is-UYn"/>

@@ -15,6 +15,10 @@ class SendToViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var users : [User] = []
     
+    var imageURL = ""
+    
+    var desc = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,6 +51,17 @@ class SendToViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.textLabel?.text = user.email
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let user = users[indexPath.row]
+        
+        let snap = ["from":user.email, "description":desc, "imageURL":imageURL]
+        
+        Database.database().reference().child("users").child(user.uid).child("snaps").childByAutoId().setValue(snap)
+        
+        navigationController!.popToRootViewController(animated: true)
     }
    
 }

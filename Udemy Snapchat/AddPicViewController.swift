@@ -58,12 +58,15 @@ class AddPicViewController: UIViewController, UIImagePickerControllerDelegate, U
                 
                 print(metadata?.downloadURL() ?? "")
                 
-                self.performSegue(withIdentifier: "selectUserSegue", sender: nil)            }
+                self.performSegue(withIdentifier: "selectUserSegue", sender: metadata?.downloadURL()!.absoluteString)            }
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        let nextVC = segue.destination as! SendToViewController
+        nextVC.imageURL = sender as! String
+        nextVC.desc = snapNameTextField.text!
     }
     
 }
